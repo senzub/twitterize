@@ -1,0 +1,847 @@
+.siteHeader {
+	width: 100%;	
+	height: 280px;
+	background-color: rgb(146,146,146);
+	color: rgb(255,255,255);
+	position: relative;
+    border-bottom: 0.6px solid black;
+    z-index: 1;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 6em;
+}
+.siteHeader:before {
+	content:"";
+	top: 78%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	background-color: rgb(255,255,255);
+	position: absolute;
+	color: rgb(255,255,255);
+	display: inline-block;
+}
+.title {
+	position: absolute;
+	top: 0em;
+	left: 780px;
+	padding: 0;
+	font-size: 4.7em;
+	font-weight: 700;
+	font-family: Roboto;
+	letter-spacing: 5.3px;
+}
+.subtitle {
+	position: absolute;
+	top: 110px;
+	left: 830px;
+	font-size: 1em;
+	letter-spacing: 1px;
+}
+.logoImg {
+	position: absolute;
+	top: 33px;
+	left: 1180px;
+}
+.btn-twitter {
+	  background: #00ACEE;
+	  border-radius: 10px;
+	  color: #fff;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #0075a2;
+}
+.btn-twitter:link, .btn-twitter:visited {
+	 color: #fff; 
+}
+.btn-twitter:active, .btn-twitter:hover {
+ 	 background: #0075a2;
+	 color: #fff; 
+}
+.profileImgDiv {
+	position: relative;
+	left: 0px;
+	padding-left: 8.3em;
+}
+.profileImgContainer {
+	border-radius: 50%;
+    overflow: hidden;
+    width: 225px;
+    height: 225px;
+	position: relative;
+	top: 80px;
+	left: 40px;
+    border: 4.5px solid rgb(220, 220, 220);
+}
+.profileImg {
+	width: 225px;
+	height: 225px;
+}
+.primaryNavContainer {
+	position: absolute;
+	left: 32.3em;
+	top: 15.7em;
+	color: black;
+}
+.primaryNav {
+	padding-top: 5px;
+}
+.primaryNav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.twitterHandle {
+	margin-left: -5px;
+    letter-spacing: 0.5px;
+}
+
+.screenName {
+	font-size: 0.8em;
+	font-weight: 500;
+	font-style: bold;
+   	font-family: arial;
+    letter-spacing: -0.1px;
+
+}
+
+.primaryNav li {
+    list-style: none;
+    padding-right: 7px;
+    display: inline-block;
+    text-align: center;
+    padding: 0px 26px;
+    color: rgb(30,30,30);
+    font-size: 1.4em;
+   	font-weight: 550;
+   	font-family: arial;
+   	letter-spacing: 1.2px;
+    color: rgb(85,85,85);
+
+}
+.titles {
+	font-size: 0.7em;
+	font-weight: 700;
+	font-style: bold;
+   	font-family: Roboto;
+}
+.collectionsbtnContainer {
+	position: absolute;
+	top: 140px;
+	left: 465px;
+	text-decoration: none;
+	font-family: Roboto;
+	font-weight: 600;
+	letter-spacing: 2.2px;
+	font-size: 0.85em;
+
+}
+.collectionsbtn {
+	color: #fff;
+	text-decoration: none;
+	border-radius: 23px;
+	padding: 16px 47px;
+	background-color: rgb(120,120,120);
+}
+.collectionsbtn:hover {
+	color: rgb(120,120,120);
+	background-color: #fff;
+}
+#logout {
+	position: absolute;
+	top: 85px;
+	left: 32px;
+
+	text-decoration: none;
+
+
+	font-family: Roboto;
+	font-weight: 600;
+	letter-spacing: 2.2px;
+
+	font-size: 0.85em;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 23px;
+	padding: 16px 47px;
+	background-color: rgba(120,120,120, 1);
+}
+#logout:hover {
+	color: rgb(120,120,120);
+	background-color: #fff;
+}
+.dropdownContent {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 225px;
+    height: 225px;
+    background-color: rgba(50,50,50,1);
+}
+.profileImgContainer:hover .dropdownContent {
+	display: block;
+}
+
+
+@media screen and (max-width: 1395px) {
+	.title {
+		position: absolute;
+		top: 20px;
+		left: 660px;
+		padding: 0;
+		font-size: 3.6em;
+		font-weight: 700;
+		font-family: Roboto;
+		letter-spacing: 5.3px;
+	}
+	.subtitle {
+		position: absolute;
+		top: 100px;
+		left: 710px;
+		font-size: 0.7em;
+	}
+	.logoImg {
+		position: absolute;
+		top: 33px;
+		left: 1000px;
+	}
+}
+
+@media screen and (max-width: 1270px) {
+
+	.tweet {
+		margin: 15px;
+	}
+
+}
+
+@media screen and (max-width: 1210px) {
+	.profileImgContainer {
+	    width: 225px;
+	    height: 225px;
+		position: relative;
+		top: 80px;
+		left: 0px;
+	    border: 4.5px solid rgb(220, 220, 220);
+	}
+	.profileImg {
+		width: 225px;
+		height: 225px;
+	}	
+	.primaryNavContainer {
+		position: absolute;
+		left: 25em;
+		top: 15.8em;
+		color: black;
+	}
+	.collectionsbtnContainer {
+		position: absolute;
+		top: 140px;
+		left: 405px;
+		letter-spacing: 2.2px;
+		font-size: 0.85em;
+	}
+	.collectionsbtn {
+		color: #fff;
+		text-decoration: none;
+		border-radius: 23px;
+		padding: 16px 47px;
+		background-color: rgb(120,120,120);
+	}
+	.title {
+		position: absolute;
+		top: 20px;
+		left: 600px;
+		padding: 0;
+		font-size: 3.2em;
+		font-weight: 700;
+		font-family: Roboto;
+		letter-spacing: 5.3px;
+	}
+	.subtitle {
+		position: absolute;
+		top: 120px;
+		left: 660px;
+		font-size: 0.7em;
+	}
+	.logoImg {
+		position: absolute;
+		top: 50px;
+		left: 930px;
+		width: 150px;
+		height: 120px;
+	}
+}
+@media screen and (max-width: 1110px) {
+	.profileImg {
+		width: 180px;
+		height: 180px;
+	}
+	.profileImgContainer {
+	    width: 180px;
+	    height: 180px;
+		position: relative;
+		top: 80px;
+		left: -60px;
+	    border: 4.5px solid rgb(220, 220, 220);
+	}
+	.dropdownContent {
+	    width: 180px;
+	    height: 180px;
+		position: relative;
+		top: 80px;
+		left: -60px;	
+		display: none;    
+	}	
+	#logout {
+		position: absolute;
+		top: 62px;
+		left: 12px;
+		letter-spacing: 2.2px;
+
+		font-size: 0.8em;
+	}	
+	.primaryNavContainer {
+		position: absolute;
+		left: 19em;
+		top: 15.7em;
+		color: black;
+	}
+	.collectionsbtnContainer {
+		position: absolute;
+		top: 140px;
+		left: 340px;
+		letter-spacing: 2.2px;
+		font-size: 0.85em;
+	}
+	.title {
+		position: absolute;
+		top: 20px;
+		left: 550px;
+		padding: 0;
+		font-size: 3.7em;
+		font-weight: 700;
+		font-family: Roboto;
+		letter-spacing: 5.3px;
+	}
+	.subtitle {
+		position: absolute;
+		top: 120px;
+		left: 600px;
+		font-size: 0.7em;
+	}
+	.logoImg {
+		position: absolute;
+		top: 100px;
+		left: 840px;
+		width: 80px;
+		height: 64px;
+	}
+
+}
+@media screen and (max-width: 940px) {
+	.logoImg {
+		display: none;
+	}	
+}
+@media screen and (max-width: 866px) {
+	.profileImgContainer {
+	    width: 180px;
+	    height: 180px;
+		position: relative;
+		top: 110px;
+		left: -100px;
+	    border: 4.5px solid rgb(220, 220, 220);
+	}
+	.profileImg {
+		width: 180px;
+		height: 180px;
+	}
+	.title {
+		position: absolute;
+		top: 30px;
+		left: 360px;
+
+		padding: 0;
+		font-size: 3.5em;
+		font-weight: 700;
+		font-family: Roboto;
+		letter-spacing: 5.3px;
+	}
+	.subtitle {
+		position: absolute;
+		top: 107px;
+		left: 410px;
+		font-size: 0.7em;
+	}
+	.collectionsbtnContainer {
+		position: absolute;
+		top: 170px;
+		left: 410px;
+		letter-spacing: 2.2px;
+		font-size: 0.85em;
+	}
+	.collectionsbtn {
+		color: #fff;
+		text-decoration: none;
+		border-radius: 23px;
+		padding: 13px 40px;
+		background-color: rgb(120,120,120);
+	}
+	.primaryNavContainer {
+		position: absolute;
+		left: 15.6em;
+		top: 15.9em;
+		color: black;
+	}
+	.primaryNav li {
+	    list-style: none;
+	    padding-right: 7px;
+	    display: inline-block;
+	    text-align: center;
+	    padding: 0px 26px;
+	    color: rgb(30,30,30);
+	    font-size: 1.1em;
+	   	font-weight: 550;
+	   	font-family: arial;
+	   	letter-spacing: 1.2px;
+	    color: rgb(85,85,85);
+	}
+}
+
+@media screen and (max-width: 752px) {
+	.profileImgContainer {
+	    width: 160px;
+	    height: 160px;
+		position: relative;
+		top: 40px;
+		left: -50px;
+	    border: 4.5px solid rgb(220, 220, 220);
+	}
+	.profileImg {
+		width: 160px;
+		height: 160px;
+	}
+	#logout {
+		position: absolute;
+		top: 52px;
+		left: 4px;
+		letter-spacing: 2.2px;
+
+		font-size: 0.7em;
+	}		
+	.dropdownContent {
+	    width: 160px;
+	    height: 160px;
+	}	
+	.title {
+		position: absolute;
+		top: 30px;
+		left: 305px;
+		padding: 0;
+		font-size: 3.3em;
+		font-weight: 700;
+		font-family: Roboto;
+		letter-spacing: 5.3px;
+	}
+	.subtitle {
+		position: absolute;
+		top: 100px;
+		left: 340px;
+		font-size: 0.7em;
+	}
+	.collectionsbtnContainer {
+		position: absolute;
+		top: 170px;
+		left: 350px;
+		letter-spacing: 2.2px;
+		font-size: 0.85em;
+
+	}
+	.primaryNavContainer {
+		position: absolute;
+		left: 7em;
+		top: 15.8em;
+		color: black;
+
+	}
+	.primaryNav li {
+	    list-style: none;
+	    padding-right: 7px;
+	    display: inline-block;
+	    text-align: center;
+	    padding: 0px 26px;
+	    color: rgb(30,30,30);
+	    font-size: 1em;
+	   	font-weight: 550;
+	   	font-family: arial;
+	   	letter-spacing: 1.2px;
+	    color: rgb(85,85,85);
+
+	}
+}
+@media screen and (max-width: 668px) {
+	.primaryNavContainer {
+		position: absolute;
+		left: 5.1em;
+	}
+}
+
+@media screen and (max-width: 641px) {
+	.profileImgContainer {
+	    width: 150px;
+	    height: 150px;
+		position: relative;
+		top: 40px;
+		left: -70px;
+	    border: 4.5px solid rgb(220, 220, 220);
+	}
+	.profileImg {
+		width: 150px;
+		height: 150px;
+	}
+	.dropdownContent {
+	    width: 150px;
+	    height: 150px;
+	}
+	#logout {
+		position: absolute;
+		top: 52px;
+		left: 4px;
+		letter-spacing: 2.2px;
+		padding: 13px 40px;
+		font-size: 0.8em;
+	}		
+
+	.title {
+		position: absolute;
+		top: 30px;
+		left: 265px;
+
+		padding: 0;
+		font-size: 2.8em;
+		font-weight: 700;
+		font-family: Roboto;
+		letter-spacing: 5.3px;
+	}
+	.subtitle {
+		position: absolute;
+		top: 90px;
+		left: 290px;
+		font-size: 0.7em;
+	}
+	.collectionsbtnContainer {
+		position: absolute;
+		top: 149px;
+		left: 296px;
+		letter-spacing: 2.2px;
+		font-size: 0.85em;
+
+	}
+	.primaryNavContainer {
+		position: absolute;
+		left: 6.35em;
+		top: 15.7em;
+		color: black;
+	}
+	.primaryNav li {
+	    list-style: none;
+	    padding-right: 7px;
+	    display: inline-block;
+	    text-align: center;
+	    padding: 0px 15px;
+	    color: rgb(30,30,30);
+	    font-size: 0.9em;
+	   	font-weight: 550;
+	   	font-family: arial;
+	   	letter-spacing: 1.2px;
+	    color: rgb(85,85,85);
+
+	}
+
+
+}
+
+
+@media screen and (max-width: 569px) {
+
+
+	.collectionsbtnContainer {
+		position: absolute;
+		top: 147px;
+		left: 299px;
+
+	}
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+	.siteHeader {
+		height: 200px;
+	}
+
+	.profileImgContainer {
+	    width: 110px;
+	    height: 110px;
+		position: relative;
+		top: 40px;
+		left: -70px;
+	    border: 4.5px solid rgb(220, 220, 220);
+	}
+	.profileImg {
+		width: 110px;
+		height: 110px;
+	}
+	.dropdownContent {
+	    width: 110px;
+	    height: 110px;
+	}
+	#logout {
+		position: absolute;
+		top: 39px;
+		left: 7px;
+		letter-spacing: 1.8px;
+		padding: 7px 24px;
+		font-size: 0.6em;
+	}			
+
+	.profileImgContainer {
+		top: 30px;
+		left: -100px;
+	    border: 4.5px solid rgb(220, 220, 220);
+	}
+
+	.title {
+
+		position: absolute;
+		top: 30px;
+		left: 195px;
+
+		padding: 0;
+		font-size: 2.3em;
+		font-weight: 700;
+		font-family: Roboto;
+		letter-spacing: 5.3px;
+	}
+
+	.subtitle {
+		position: absolute;
+		top: 70px;
+		left: 210px;
+
+		font-size: 0.6em;
+
+	}
+	.collectionsbtnContainer {
+		position: absolute;
+		top: 120px;
+		left: 227px;
+
+		letter-spacing: 2.2px;
+
+		font-size: 0.85em;
+
+	}
+
+
+	.collectionsbtn {
+		font-size: 0.7em;
+		padding: 10px 28px;
+		background-color: rgb(120,120,120);
+	}
+
+	.primaryNavContainer {
+		position: absolute;
+		left: 5em;
+		top: 10.8em;
+		color: black;
+
+	}
+	.primaryNav li {
+	    list-style: none;
+	    padding-right: 7px;
+	    display: inline-block;
+	    text-align: center;
+	    padding: 0px 10px;
+	    color: rgb(30,30,30);
+	    font-size: 0.8em;
+	   	font-weight: 550;
+	   	font-family: arial;
+	   	letter-spacing: 1.2px;
+	    color: rgb(85,85,85);
+
+	}
+
+
+}
+
+@media screen and (max-width: 429px) {
+	.siteHeader {
+		height: 200px;
+	}
+	.profileImgContainer {
+		top: 27px;
+		left: -110px;
+	    border: 4.5px solid rgb(220, 220, 220);
+	}
+
+	.title {
+
+		position: absolute;
+		top: 30px;
+		left: 165px;
+
+		padding: 0;
+		font-size: 2.3em;
+		font-weight: 700;
+		font-family: Roboto;
+		letter-spacing: 5.3px;
+	}
+
+	.subtitle {
+		position: absolute;
+		top: 70px;
+		left: 177px;
+		font-size: 0.6em;
+
+	}
+	.collectionsbtnContainer {
+		position: absolute;
+		top: 120px;
+		left: 200px;
+
+		letter-spacing: 2.2px;
+
+		font-size: 0.85em;
+
+	}
+
+
+	.collectionsbtn {
+		font-size: 0.7em;
+		padding: 10px 28px;
+		background-color: rgb(120,120,120);
+	}
+
+	.primaryNavContainer {
+		position: absolute;
+		left: 3em;
+		top: 10.8em;
+
+	}
+	.primaryNav li {
+	    padding: 0px 10px;
+	    font-size: 0.7em;
+	   	letter-spacing: 1px;
+	    color: rgb(85,85,85);
+
+	}
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 376px) {
+
+	.primaryNavContainer {
+		position: absolute;
+		left: 2.6em;
+		top: 10.75em;
+		color: black;
+
+	}
+
+	.title {
+		position: absolute;
+		top: 30px;
+		left: 140px;
+	}
+
+	.subtitle {
+		position: absolute;
+		top: 70px;
+		left: 163px;
+
+	}
+	.collectionsbtnContainer {
+		position: absolute;
+		top: 120px;
+		left: 180px;
+	}
+
+
+}
+
+@media screen and (max-width: 330px) {
+
+	.siteHeader {
+		height: 200px;
+	}
+
+	.profileImgContainer {
+		top: 27px;
+		left: -110px;
+	    border: 4.5px solid rgb(220, 220, 220);
+	}
+
+
+	.tweet {
+		width: 320px;
+		height: 320px;
+	}
+
+	.title {
+
+		position: absolute;
+		top: 30px;
+		left: 147px;
+
+		padding: 0;
+		font-size: 1.5em;
+		letter-spacing: 5.3px;
+	}
+
+	.subtitle {
+		position: absolute;
+		top: 60px;
+		left: 130px;
+
+		font-size: 0.65em;
+	}
+
+
+	.collectionsbtnContainer {
+		position: absolute;
+		top: 112px;
+		left: 157px;
+
+		letter-spacing: 2px;
+		font-size: 0.8em;
+
+	}
+
+	.collectionsbtn {
+		font-size: 0.7em;
+		padding: 10px 28px;
+	}
+
+	.primaryNavContainer {
+		position: absolute;
+		left: 1em;
+	}
+
+	.primaryNav li {
+	    font-size: 0.75em;
+	   	letter-spacing: 1px;
+	}
+
+
+}

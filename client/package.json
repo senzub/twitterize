@@ -1,0 +1,36 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "css-loader": "^1.0.0",
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0",
+    "radium": "^0.25.0",
+    "react": "^16.5.2",
+    "react-animations": "^1.0.0",
+    "react-bottom-scroll-listener": "^1.3.0",
+    "react-dom": "^16.5.2",
+    "react-image": "^1.4.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "react-slide-toggle": "^0.1.13",
+    "react-transition-group": "^2.5.3",
+    "react-twitter-embed": "^1.1.3",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.86.0",
+    "style-loader": "^0.23.0",
+    "velocity": "^0.7.2",
+    "velocity-react": "^1.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-masonry-css": "^1.0.12"
+  }
+}

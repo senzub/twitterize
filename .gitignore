@@ -1,0 +1,8 @@
+.DS_Store
+
+/client/.git
+/client/node_modules
+/backend1-users/.git
+/backend1-users/node_modules
+/backend2-categories/.git
+/backend2-categories/node_modules

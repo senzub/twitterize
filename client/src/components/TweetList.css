@@ -1,0 +1,18 @@
+.tweet-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	grid-auto-rows: 10px;
+	grid-gap: 0 0px;
+}
+
+.tweet-list div {
+	width: 400px; 
+}
+
+
+.tweet {
+	width: 400px;
+	height: 400px;
+	
+	margin: 25px;
+}

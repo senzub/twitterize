@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.body {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;	
+	height: 100%;
+	bottom: 0;
+	max-width: 100%;
+	background-color: rgb(146,146,146);
+	color: rgb(255,255,255);
+	text-align: center;
+}
+
+#center {
+	width: 48em;
+	height: 14.375em;	
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#container {
+	width: 48em;
+	height: 14.375em;
+	display: inline-block;
+	padding-right: 11.3em;
+	padding-left: -5em;
+	position: relative;
+}
+
+.logoimg {
+	position: absolute;
+	top: 1.5em;
+	left: -3em;
+}
+
+.twittertitle {
+	padding: 0;
+	font-size: 5.2em;
+	font-weight: 700;
+	font-family: Roboto;
+	letter-spacing: 6px;
+
+	position: absolute;
+	top: 0.3em;
+	left: 2.9em;
+}
+
+.twittersubtitle {
+	font-size: 0.9em;
+	letter-spacing: 1px;
+	position: absolute;
+	top: 7.3em;
+	left: 23em;
+
+}
+
+.login {
+	color: #fff;
+	text-decoration: none;
+	border-radius: 23px;
+	padding: 16px 47px;
+	background-color: rgb(120,120,120);
+
+	font-family: Roboto;
+	font-weight: 600;
+	letter-spacing: 2.2px;
+	font-size: 0.85em;
+
+	position: absolute;
+	top: 12em;
+	left: 23.6em;
+}
+
+
+@media screen and (max-width: 840px) {
+	#center {
+		width: 36em;
+		height: 14.375em;	
+		margin: auto;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
+	#container {
+		width: 36em;
+		height: 14.375em;
+		display: inline-block;
+		padding-right: 11.3em;
+		position: relative;
+	}
+	.logoimg {
+		position: absolute;
+		top: 1.85em;
+		left: -0.2em;
+		width: 8em;
+		height: 6.4em;	
+	}
+	.twittertitle {
+		padding: 0;
+		font-size: 4.7em;
+		font-weight: 700;
+		font-family: Roboto;
+		letter-spacing: 6px;
+		position: absolute;
+		top: 0.3em;
+		left: 2.3em;
+	}
+	.twittersubtitle {
+		font-size: 0.7em;
+		position: absolute;
+		top: 8.5em;
+		left: 23em;
+	}
+	.login {
+		color: #fff;
+		text-decoration: none;
+		border-radius: 23px;
+		padding: 12px 35.25px;
+		background-color: rgb(120,120,120);
+		font-family: Roboto;
+		font-weight: 600;
+		letter-spacing: 2px;
+		font-size: 0.85em;
+		position: absolute;
+		top: 11.5em;
+		left: 17em;
+	}
+}
+
+@media screen and (max-width: 646px) {
+	#center {
+		width: 29em;
+		height: 14.375em;	
+		margin: auto;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
+	#container {
+		width: 29em;
+		height: 14.375em;
+		display: inline-block;
+		padding-right: 11.3em;
+		position: relative;
+	}
+	.logoimg {
+		position: absolute;
+		top: 1.85em;
+		left: -0.2em;
+		width: 6em;
+		height: 4.8em;	
+	}
+	.twittertitle {
+		padding: 0;
+		font-size: 3.4em;
+		font-weight: 700;
+		font-family: Roboto;
+		letter-spacing: 5px;
+		position: absolute;
+		top: 0.3em;
+		left: 2.3em;
+	}
+	.twittersubtitle {
+		font-size: 0.7em;
+		position: absolute;
+		top: 6em;
+		left: 16em;
+	}
+	.login {
+		color: #fff;
+		text-decoration: none;
+		border-radius: 23px;
+		padding: 10px 29px;
+		background-color: rgb(120,120,120);
+		font-family: Roboto;
+		font-weight: 600;
+		letter-spacing: 1.7px;
+		font-size: 0.7em;
+		position: absolute;
+		top: 10.9em;
+		left: 16em;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	#center {
+		width: 20em;
+		height: 14.375em;	
+		margin: auto;
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
+	#container {
+		width: 20em;
+		height: 14.375em;
+		display: inline-block;
+		padding-right: 11.3em;
+		position: relative;
+	}
+	.logoimg {
+		position: absolute;
+		top: 1.85em;
+		left: 0.4em;
+		width: 4em;
+		height: 3.2em;	
+	}
+	.twittertitle {
+		padding: 0;
+		font-size: 2.4em;
+		font-weight: 700;
+		font-family: Roboto;
+		letter-spacing: 5px;
+		position: absolute;
+		left: 2.3em;
+	}
+	.twittersubtitle {
+		font-size: 0.7em;
+		position: absolute;
+		top: 3.7em;
+		left: 8.7em;
+	}
+	.login {
+		color: #fff;
+		text-decoration: none;
+		border-radius: 23px;
+		padding: 10px 29px;
+		background-color: rgb(120,120,120);
+		font-family: Roboto;
+		font-weight: 600;
+		letter-spacing: 1.4px;
+		font-size: 0.6em;
+		position: absolute;
+		top: 10em;
+		left: 10.6em;
+	}
+}

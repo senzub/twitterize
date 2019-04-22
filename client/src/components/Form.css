@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+.modalFooter {
+	border-top: 1px solid rgb(210,210,210);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 71px;
+}
+
+
+.categoriesList {
+	position: absolute;
+	top: 74px;
+	left: 0;
+	 -webkit-column-count: 3;
+		-moz-column-count: 3;
+	column-count: 3;
+    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+         	  page-break-inside: avoid; /* Firefox */
+                   break-inside: avoid; /* IE 10+ */
+}
+
+
+
+
+
+
+
+
+input[type=text] {
+	font-family: 'Lato';
+	padding: 9px 14px;
+	font-size: 1.3em;
+	color: rgb(180,180,180);
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1.7px solid rgb(200,200,200);
+
+	width: 350px;
+
+
+
+	position: absolute;
+	top: 10px;
+	left: 47px;
+
+}
+
+
+input[type=text]:focus {
+	outline-width: 0;
+	border-bottom: 1.5px solid rgb(160,160,160);
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+.modalBtnContainer {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+}
+
+
+.modalBtnSave {
+	text-decoration: none;
+	
+	margin-right: 10px;
+	background-color: rgb(10, 95, 255);	
+	color: #fff;
+
+
+	padding: 13px 21px;
+	border-radius: 5px;
+	font-size: 1.1em;
+	font-weight: 560;
+}
+
+.modalBtnSave:hover {
+
+	border: 1px solid rgb(210,210,210);
+	font-weight: 550;
+	background-color: #fff;
+}
+
+.modalBtnCancel {
+	text-decoration: none;
+	font-weight: 550;
+	background-color: #fff;
+	color: rgb(100,100,100);
+
+	padding: 12px 19px;	
+	border: 1px solid rgb(210,210,210);
+	border-radius: 5px;
+
+
+	margin-left: 10px;
+	font-size: 1.1em;
+	font-weight: 560;
+}
+
+.modalBtnCancel:hover {
+	background-color: rgb(10, 95, 255);
+	color: #fff;	
+}
+
+
+
+
+input[type=checkbox] {
+	display: inline-block;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.3em;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 19.8px;
+    width: 19.8px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input[type=checkbox] ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input[type=checkbox]:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input[type=checkbox]:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+@media screen and (max-width: 659px) {
+	input[type=text] {
+		width: 270px;
+	}
+
+}
+
+
+@media screen and (max-width: 592px) {
+	.categoriesList {
+		position: absolute;
+		top: 74px;
+
+		
+		 -webkit-column-count: 2;
+			-moz-column-count: 2;
+		column-count: 2;
+	    -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+	         	  page-break-inside: avoid; /* Firefox */
+	                   break-inside: avoid; /* IE 10+ */
+	}
+
+}
+
+
+@media screen and (max-width: 570px) {
+	input[type=text] {
+		width: 210px;
+	}
+
+	.modalBtnSave {
+		margin-right: 4.5px;
+
+		padding: 10px 16.15px;
+	}
+
+	.modalBtnCancel {
+
+		padding: 10px 16.15px;	
+
+	}
+}
+
+
+
+@media screen and (max-width: 495px) {
+	input[type=text] {
+		width: 160px;
+		position: absolute;
+		top: 10px;
+		left: 27px;		
+	}
+
+	.modalBtnSave {
+		margin-right: 3px;
+		padding: 10px 16.15px;
+	}
+
+	.modalBtnCancel {
+		padding: 10px 16.15px;
+	}
+}
+
+@media screen and (max-width: 428px) {
+
+	input[type=text] {
+		width: 150px;
+		position: absolute;
+		top: 10px;
+		left: 17px;		
+	}
+
+	.modalBtnSave {
+		margin-right: 0px;
+		padding: 8px 12.92px;
+	}
+
+	.modalBtnCancel {
+		padding: 8px 12.92px;
+
+	}
+
+
+}
+
+@media screen and (max-width: 330px) {
+
+	input[type=text] {
+		width: 100px;
+		font-size: 0.9em;
+		position: absolute;
+		top: 16px;
+		left: 15px;		
+	}
+
+	.modalBtnSave {
+		margin-right: 0px;
+		padding: 6px 9.69px;
+	}
+
+	.modalBtnCancel {
+		padding: 6px 9.69px;
+
+	}
+
+
+}
